@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWD Friendly Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      background: #005f99;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #005f99;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #004466;
+    }
+    ul.team {
+      list-style: none;
+      padding: 0;
+    }
+    ul.team li {
+      background: #eef6fb;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our PWD Support Website</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#resources">Resources</a>
+      <a href="#team">Our Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="card">
+      <h2>About Us</h2>
+      <p>This website is made for Persons with Disabilities (PWDs). It is easy to use, with screen reader support, large text, and accessible design.</p>
+    </section>
+
+    <section id="resources" class="card">
+      <h2>Helpful Resources</h2>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/" target="_blank">Web Accessibility Guidelines</a></li>
+        <li><a href="https://www.accessibility.com/" target="_blank">Accessibility Resources</a></li>
+        <li><a href="https://www.enable.org.ph/" target="_blank">PWD Programs in the Philippines</a></li>
+      </ul>
+    </section>
+
+    <section id="team" class="card">
+      <h2>Our Team</h2>
+      <ul class="team">
+        <li>Dustin Louie G Aguilar</li>
+        <li>Devon G Recto</li>
+        <li>Jed Rosal Tangag</li>
+        <li>Irah G Paler</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" aria-label="Enter your name"><br><br>
+        
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" aria-label="Enter your message"></textarea><br><br>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
